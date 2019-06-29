@@ -1,0 +1,65 @@
+#login-view-container {
+  #user-form {
+    padding: 20px;
+
+    form {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+
+      input {
+        flex: 1;
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        background-color: transparent;
+        outline: none;
+        color: white;
+        font-size: 1em;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #827676;
+      }
+
+      .password-container {
+        display: flex;
+        flex-flow: row nowrap;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 10px;
+          right: 0;
+          filter: opacity(.5) drop-shadow(0 0 0 #d6d6d6);
+        }
+
+        input {
+          padding-right: 60px;
+        }
+      }
+
+      .form-text {
+        display: flex;
+        flex-flow: column wrap;
+        color: white;
+        text-align: center;
+        line-height: 18px;
+        font-size: .9em;
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+
+  #password-restored-message {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 60vh;
+    text-align: center;
+
+    #user-email-restored {
+      text-align: 20px;
+    }
+  }
+}

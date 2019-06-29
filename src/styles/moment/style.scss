@@ -1,0 +1,31 @@
+@import "card";
+@import "header";
+@import "front-body";
+@import "back-body";
+@import "footer";
+@import "thumb";
+@import "widgets/background";
+@import "widgets/game-score";
+@import "widgets/main-assets";
+@import "widgets/pulse";
+
+#moment-view {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+
+  #flipped-cards-container {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+
+    &.is-flipped {
+      transform: translateX(-100%) rotateY(-180deg);
+    }
+  }
+}

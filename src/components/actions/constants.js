@@ -1,0 +1,8 @@
+export const ActionType = {
+  LOAD_MOMENT: 'LOAD_MOMENT',
+  SET_RELATED_COMPETITOR: 'SET_RELATED_COMPETITOR',
+};
+
+export const ApiActions = {
+  API_START_REQUEST: 'API_START_REQUEST',
+};

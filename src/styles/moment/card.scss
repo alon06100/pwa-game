@@ -1,0 +1,43 @@
+@keyframes hide-card {
+  from {
+    visibility: inherit;
+  }
+  to {
+    visibility: collapse;
+  }
+}
+
+#moment-card {
+  width: 100%;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  &.hidden-card {
+    .moment-body {
+      animation: hide-card .8s ease-in-out forwards;
+    }
+  }
+
+  &.back {
+    transform: rotateY(180deg);
+  }
+
+  .moment-body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

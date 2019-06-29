@@ -1,0 +1,17 @@
+#moment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px 35px 30px;
+  color: white;
+
+  #app-back-btn {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .fa-share-alt {
+    font-size: 1.3em;
+  }
+}

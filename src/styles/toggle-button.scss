@@ -1,0 +1,30 @@
+.toggle-button {
+  width: 35px;
+  height: 15px;
+  border-radius: 22px;
+  position: relative;
+
+  &.checked {
+    background-color: #143835;
+    .toggle-circle {
+      left: 0;
+      background-color: #149185;
+    }
+  }
+  &.unchecked {
+    background-color: gray;
+    .toggle-circle {
+      left: 15px;
+      background-color: white;
+    }
+  }
+  
+  .toggle-circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -2px;
+    transition: all .3s ease;
+  }
+}

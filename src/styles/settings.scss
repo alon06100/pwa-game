@@ -1,0 +1,69 @@
+#settings-page {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+
+  #user-information-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 20px;
+
+    #user-information-right-section {
+      flex-grow: 4;
+    }
+
+    #user-information-left-section {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: space-between;
+      #user-profile-image {
+        img {
+          width: 70px;
+          height: 70px;
+          border: 2px solid white;
+          border-radius: 50%;
+        }
+      }
+      #user-information {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 10px;
+        #user-name {
+          font-size: 0.9em;
+        }
+        #user-email {
+          font-size: 0.8em;
+          color: gray;
+        }
+      }
+      #attention-button {
+        border: 3px solid white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+  }
+  #settings-list {
+    padding: 20px;
+    .settings-list-item {
+      border-top: 0.5px solid gray;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+
+      &:last-child {
+        border-bottom: 0.5px solid gray;
+      }
+    }
+  }
+}

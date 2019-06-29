@@ -1,0 +1,60 @@
+#back-moment-body {
+  align-items: normal !important;
+  color: white;
+
+  #back-moment-info {
+    position: relative;
+    padding: 0 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .moment-title {
+      display: block;
+      font-size: 1.7em;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+      padding-bottom: 3px;
+    }
+
+    .moment-subtitle {
+      display: flex;
+      font-size: .8em;
+      text-transform: uppercase;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .subtitle-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: #888888;
+      }
+    }
+
+    .moment-description {
+      line-height: 1.5;
+      font-weight: 400;
+      font-size: .85em;
+    }
+
+    .react-swipe-container {
+      margin: 20px 0;
+      .field-position {
+        position: relative;
+
+        .field-img {
+          max-width: 95%;
+        }
+
+        .field-ball {
+          position: absolute;
+        }
+      }
+    }
+
+    .carousel-bullets {
+      margin-bottom: 20px;
+    }
+  }
+}

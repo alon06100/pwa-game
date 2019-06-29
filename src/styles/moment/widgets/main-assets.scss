@@ -1,0 +1,10 @@
+.main-assets-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .full-size-asset {
+    position: relative;
+    height: 100%;
+  }
+}

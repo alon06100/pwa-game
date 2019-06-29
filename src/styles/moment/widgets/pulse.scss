@@ -1,0 +1,51 @@
+#pulse-container {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 80px;
+  overflow: auto;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+
+  #scroll-icon {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50px;
+  }
+
+  .pulse-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 8px;
+    height: 100%;
+    margin-right: 1px;
+    flex-shrink: 0;
+
+    .empty-space {
+      background-color: red;
+      border-radius: 20px;
+      width: 100%;
+      flex-grow: 1;
+    }
+
+    .pulse-bar {
+      background-color: blue;
+      border-radius: 20px;
+      width: 100%;
+    }
+
+    .pulse-half-line {
+      position: absolute;
+      top: 50%;
+      width: 75%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      border: .5px solid #b1a8a8;
+    }
+  }
+}

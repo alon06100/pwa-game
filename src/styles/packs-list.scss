@@ -1,0 +1,88 @@
+#packs-list-container {
+    display: flex;
+    flex-flow: column wrap;
+    color: white;
+
+    .pack {
+        position: relative;
+        margin: 10px 5px;
+        border-radius: 20px;
+        flex: 1 0 calc(25% - 10px);
+        background: black;
+        display: flex;
+        text-align: center;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: flex-end;
+        min-height: 350px;
+
+        .pack-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-height: 35vh;
+            overflow: hidden;
+            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+
+            img {
+                max-width: 100%;
+
+            }
+        }
+
+        .pack-header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+
+            span, i {
+                margin: 20px;
+            }
+
+            i {
+                font-size: 1.2em;
+            }
+        }
+
+        .pack-body {
+            display: flex;
+            flex-flow: column wrap;
+            line-height: 22px;
+            position: relative;
+            align-items: stretch;
+
+            .pack-title {
+                font-size: 1.1em;
+                align-self: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .pack-description {
+                padding: 15px;
+            }
+
+            .pack-action {
+                margin: 20px 0;
+
+                .pack-play-btn {
+                    background-color: white;
+                    color: black;
+                    border-radius: 20px;
+                    padding: 6px 24px;
+                    font-size: .8em;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 55px;
+        }
+    }
+}

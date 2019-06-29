@@ -1,0 +1,133 @@
+#leader-board-container {
+  color: white;
+  margin-bottom: 20px;
+
+  #titles-texts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      text-transform: uppercase;
+    }
+
+    .see-all-btn {
+      font-size: .8em;
+      color: white;
+    }
+  }
+
+  #leaders-list {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    overflow: auto;
+
+  }
+}
+.leader-board-user {
+  width: 65px;
+  flex-shrink: 0;
+  margin-right: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  position: relative;
+
+
+  &.large {
+    width: 150px;
+    color: white;
+    flex-flow: column;
+
+    .user-profile-img {
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+    .user-position {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      border-color: gold !important;
+    }
+  }
+  &.medium {
+    width: 100px;
+    color: white;
+    flex-flow: column;
+
+    .user-profile-img {
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+
+    .user-position {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+    &:nth-child(1) .user-position{
+      border-color: silver;
+    }
+
+    &:nth-child(2) .user-position{
+      border-color: sandybrown;
+      right: 0;
+      left: auto;
+    }
+  }
+
+  .user-profile-img {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 7px;
+    border-radius: 50%;
+  }
+
+  .user-name {
+    font-size: .9em;
+    margin-bottom: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+
+  .user-points {
+    font-size: .7em;
+    margin-bottom: 7px;
+  }
+
+  .heed-coins {
+    width: 25px;
+  }
+
+  .user-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #212121;
+    background-color: #212121;
+    color: white;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    font-size: .8em;
+  }
+
+  &:nth-child(1) .user-position{
+    border-color: gold;
+  }
+
+  &:nth-child(2) .user-position{
+    border-color: silver;
+  }
+
+  &:nth-child(3) .user-position{
+    border-color: sandybrown;
+  }
+}

@@ -1,0 +1,28 @@
+#game-header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: .8em;
+  align-items: center;
+  z-index: 1;
+  top: 0;
+
+  & > i {
+    padding: 10px;
+  }
+
+  & > div {
+    padding: 10px;
+    text-shadow: 2px 2px black;
+
+    & > div {
+      margin-bottom: 3px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

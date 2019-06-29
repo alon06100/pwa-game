@@ -1,0 +1,11 @@
+.counter-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    top: 0;
+
+    .counter{
+      width: 25%;
+    }
+}

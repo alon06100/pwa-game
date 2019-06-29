@@ -1,0 +1,36 @@
+#footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  color: white;
+
+  .menu-button {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 10px;
+    color: #d6d6d6;
+
+    img {
+      opacity: .7;
+      margin-bottom: 6px;
+      width: 24px;
+    }
+
+    span {
+      font-size: .8em;
+    }
+
+    &.selected {
+      color: white;
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}

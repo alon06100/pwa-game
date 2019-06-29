@@ -1,0 +1,25 @@
+.game-score {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  .scores-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+
+    .scores {
+      margin: 0 20px;
+      display: inline-block;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+  }
+
+  .event-date {
+    text-align: center;
+    font-size: .85em;
+    color: #ffffff6e;
+  }
+}
